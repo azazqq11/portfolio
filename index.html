@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 웹페이지 설명 -->
+    <meta
+      name="description"
+      content="최유진의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta
+      name="keywords"
+      content="반응형, 웹퍼블리싱, 웹퍼블리셔, 영상, 멀티미디어, 영상편집, 포트폴리오, 웹디자인"
+    />
+    <!-- 검색 엔진 크롤링 설정 -->
+    <meta name="robots" content="index, follow" />
+    <!-- canonical URL -->
+    <link rel="canonical" href="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 제목 -->
+    <meta property="og:title" content="최유진의 포트폴리오 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="최유진의 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta property="og:image" content="images/preview.png" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta
+      property="og:description"
+      content="최유진의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="images/preview.png" />
+    <meta name="twitter:title" content="최유진의 포트폴리오 웹사이트" />
+    <meta
+      name="twitter:description"
+      content="최유진의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <meta name="twitter:image" content="images/preview.png" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li>
+            <a href="#youtube">
+              <img src="logo/—Pngtree—youtube white icon_3570427.png" alt="youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="#instargram">
+              <img
+                src="logo/—Pngtree—white instagram icon png instagram_3562066.png"
+                alt="instagram"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <div class="about-container">
+        <!-- 왼쪽 텍스트 -->
+        <div class="about-text">
+          <h1>about.</h1>
+          <p>I'm a product designer based in sunny Sydney, Australia.</p>
+          <p>
+            Since 2005, I've enjoyed turning complex problems into simple, beautiful and intuitive
+            designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out
+            in the park.
+          </p>
+        </div>
+
+        <!-- 오른쪽 강아지 이미지 (인물 사진) -->
+        <div class="about-image">
+          <img class="profile-image" src="images/2-2.인물보정.jpg" alt="Profile Image" />
+        </div>
+      </div>
+
+      <!-- 아래쪽 비디오 (호랑이 영상) -->
+      <div class="about-video">
+        <video controls loop poster="https://picsum.photos/854/480?random=1">
+          <source src="video/00_final Output_2.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- 전체 배경 회색 영역 -->
+    <div class="skill-wrapper">
+      <!-- 안쪽 콘텐츠만 가운데 정렬 -->
+      <div class="skill-section">
+        <h2>시각 디자인, 모션디자인</h2>
+        <div class="design-logos">
+          <img src="logo/Ae.png" alt="Ae" />
+          <img src="logo/Ps.png" alt="Ps" />
+          <img src="logo/Ai.png" alt="Ai" />
+          <img src="logo/Pr.png" alt="Pr" />
+        </div>
+
+        <h3>Front end</h3>
+        <div class="dev-logos">
+          <img src="logo/html.png" alt="html" />
+          <img src="logo/css.png" alt="css" />
+          <img src="logo/js.png" alt="js" />
+          <img src="logo/vs.png" alt="vs" />
+        </div>
+      </div>
+    </div>
+
+    <section id="portfolio">
+      <h1>porfolio.</h1>
+      <p>내가 만든 영상임</p>
+      <div class="portfolio-grid">
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>Pink Venom Typography</h1>
+          <h2>25초까지는 카피, 이후는 창작한 키네틱 타이포 애니메이션이에요.</h2>
+        </div>
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>영상 제목</h1>
+          <h2>설명</h2>
+        </div>
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>영상 제목</h1>
+          <h2>설명</h2>
+        </div>
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>영상 제목</h1>
+          <h2>설명</h2>
+        </div>
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>영상 제목</h1>
+          <h2>설명</h2>
+        </div>
+        <div class="card">
+          <video controls src="video/00_final Output_2.mp4"></video>
+          <h1>영상 제목</h1>
+          <h2>설명</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>contact.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="contact-icons">
+        <a href="#"><img src="logo/youtube.png" alt="YouTube" /></a>
+        <a href="#"><img src="logo/instagram.png" alt="Instagram" /></a>
+      </div>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li class="footer-icon">
+          <a href="#youtube">
+            <img src="logo/youtube-757575-exact.png" alt="youtube" />
+          </a>
+        </li>
+        <li class="footer-icon instagram-icon">
+          <a href="#instargram">
+            <img src="logo/instagram-757575-exact.png" alt="Instagram" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

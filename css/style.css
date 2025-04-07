@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 0;
+  max-width: 1200px; /* 아래와 정렬 기준 맞춤 */
+  padding-right: 235px; /* 이미지 너비만큼 오른쪽 당김 */
+}
+
+nav ul li {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 350px;
+  height: auto;
+  border-radius: 10px; /* 원한다면 모서리 둥글게 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  margin: 20px auto;
+  display: block;
+}
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* 텍스트 + 인물 사진(강아지) 정렬 */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* 텍스트와 이미지 간격 */
+}
+/* 왼쪽 텍스트 */
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 500px; /* 👉 너무 넓지 않게 제한 */
+}
+/* 오른쪽 인물 사진(강아지) */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 비디오를 따로 분리하여 about 아래쪽에 배치 */
+/* 비디오(호랑이) */
+.about-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.about-video video {
+  width: 100%;
+  max-width: 854px;
+  border-radius: 10px;
+}
+
+/* 시각 디자인 텍스트 왼쪽 정렬 */
+#about h2,
+h3 {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 0; /* 왼쪽에 붙이기 */
+}
+/* 배경 전체를 회색으로 */
+.skill-wrapper {
+  background-color: #f5f5f5; /* 연한 회색 */
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* 안쪽 내용 정렬 + 여백 */
+.skill-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 제목들 왼쪽 정렬 */
+.skill-section h2,
+.skill-section h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* 로고들 정렬 */
+.design-logos,
+.dev-logos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.design-logos img,
+.dev-logos img {
+  width: 50px;
+  height: auto;
+}
+
+/* 디자인 로고 정렬 */
+.design-logos,
+.dev-logos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.design-logos img,
+.dev-logos img {
+  width: 50px;
+  height: auto;
+}
+.div images img {
+  width: 350px;
+  height: 530px;
+}
+
+header a img {
+  padding: 10px; /* 여백 추가 */
+  width: 40px; /* 로고 크기 조정 */
+  height: 40px;
+}
+footer ul li a img {
+  padding: 10px; /* 로고 주변에 여백을 추가 */
+  border-radius: 50%; /* 원형 배경을 원하면 사용 */
+  display: inline-block; /* 인라인 블록으로 만들기 */
+}
+
+footer ul li a img {
+  width: 30px; /* 로고 크기 */
+  height: 30px; /* 로고 크기 */
+  display: block; /* 이미지 크기 맞추기 */
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+footer ul.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  max-width: 1200px;
+  padding-right: 235px; /* ✅ nav ul과 동일한 우측 여백 */
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#portfolio {
+  max-width: 1200px; /* 전체 섹션의 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 반응형 카드 */
+  gap: 30px;
+  justify-items: center; /* 카드 내부 요소 가운데 */
+}
+.portfolio-grid h2 {
+  font-size: 16px;
+  color: #333;
+}
+.card {
+  width: 100%; /* grid가 너비 조정함 */
+  max-width: 350px; /* 카드 너무 넓지 않게 제한 */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-color: #fff;
+  text-align: left;
+}
+.card video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+#contact {
+  text-align: left; /* 모든 텍스트 왼쪽 정렬 */
+  max-width: 1200px; /* 내용이 너무 퍼지지 않도록 */
+  margin: 0 auto; /* 섹션 전체는 가운데 배치 */
+  padding: 50px 20px;
+}
+
+#contact h1 {
+  text-align: left; /* "contact." 제목 왼쪽 정렬 */
+}
+
+#contact p {
+  text-align: left; /* 설명 문구 왼쪽 정렬 */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* SNS 아이콘 및 이메일도 왼쪽 정렬 */
+  gap: 10px; /* 아이콘과 이메일 사이 여백 */
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center; /* 아이콘 수직 정렬 */
+  gap: 15px; /* 아이콘 사이 간격 */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  gap: 10px; /* 간격 추가 */
+}
+
+.contact-icons a img {
+  width: 40px; /* 로고 크기 조정 */
+  height: auto;
+}
+
+footer {
+  background-color: #f2f2f2; /* 배경색 유지 */
+  color: #333; /* 글자색 유지 */
+  padding: 30px 20px; /* 푸터 높이 여유 있게 조정 */
+  text-align: center;
+  border-top: 1px solid #ccc; /* 구분선 추가 */
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-icon a img {
+  background-color: transparent; /* 배경색 제거 */
+  padding: 0; /* 패딩 없앰 */
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 0; /* 원형 효과 제거 */
+}
+
+footer ul.footer-links li {
+  display: flex;
+  align-items: center;
+}
+.footer-icon a img {
+  border-radius: 50%;
+  padding: 4px; /* ⬅️ 패딩 통일 (유튜브랑 동일) */
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
